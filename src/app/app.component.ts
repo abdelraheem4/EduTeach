@@ -7,4 +7,6 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'EduTeach';
+  name: string = '';
+email: string = ''; salary: number = 0;
 }
