@@ -1,0 +1,123 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+  }
+  body {
+    font-family: tahoma, arial;
+    height: 100vh;
+  }
+  .page {
+    display: flex;
+  }
+  .page .sidebar {
+    width: 260px;
+    background-color: #333;
+    padding: 20px;
+    color: #fff;
+  }
+  .page .sidebar h3 {
+    text-align: center;
+    border-bottom: 1px solid #5f5e5e;
+    padding-bottom: 20px;
+  }
+  .page .sidebar .links ul {
+    list-style: none;
+    padding: 0;
+    margin-top: 20px;
+  }
+  .page .sidebar .links li {
+    padding: 10px;
+  }
+  .page .sidebar .links a {
+    color: #fff;
+    padding: 10px;
+    text-decoration: none;
+    display: block;
+    border-radius: 6px;
+  }
+  .page .sidebar .links a.active {
+    background-color: rgb(238 238 238 / 30%);
+  }
+  .page .sidebar .links a:hover {
+    background-color: rgb(238 238 238 / 15%);
+  }
+  .content-area {
+    background-color: #eee;
+    width: calc(100% - 260px);
+  }
+  .content-area .content {
+    margin: 30px;
+  }
+  .content-area .content h3 {
+    background-color: #e91e63;
+    color: #fff;
+    width: fit-content;
+    padding: 10px;
+    border-radius: 0 0 6px 0;
+    margin: -30px;
+  }
+  .content-area .special {
+    padding-top: 40px;
+  }
+  .content-area .content .personal-information {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .content-area label {
+    padding: 10px 0;
+    display: block;
+    width: fit-content;
+    font-weight: bold;
+  }
+  .content-area .content input,
+  textarea,
+  select {
+    padding: 10px;
+    display: block;
+    width: 100%;
+    border: none;
+    background-color: #fafafa;
+    border-bottom: 1px solid #e2e2e2;
+    outline: none;
+  }
+  .content textarea {
+    height: 200px;
+  }
+  .content-area .content .experience,
+  .notes,
+  .hardweare {
+    background-color: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+  .content-area .content .hardweare .box div {
+    background-color: #fafafa;
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  .content-area .content .hardweare input {
+    display: inline;
+    width: 10px;
+  }
+  .content-area .content .hardweare label {
+    display: unset;
+  }
+  .content-area .content .hardweare .one {
+    border-bottom: 1px solid #efefef;
+  }
+  .content-area .content .hardweare .first {
+    margin-top: 40px;
+  }
+  .content-area .content .hardweare .second {
+    margin-top: 10px;
+  }
+  .content-area .content .submit {
+    padding: 20px;
+    background-color: #2196f3;
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  

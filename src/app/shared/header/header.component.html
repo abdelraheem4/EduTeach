@@ -35,25 +35,9 @@
   
                 <ul class="site-menu main-menu js-clone-nav mr-auto d-none d-lg-block">
                   <li><a href="index.html" class="nav-link">Home</a></li>
-                  <li class="has-children active">
-                    <a routerLink="/prevention" routerLinkActive="active" class="nav-link">Prevention</a>
-                    <!-- <ul class="dropdown">
-                      <li><a href="#" class="nav-link">Stay at home</a></li>
-                      <li><a href="#" class="nav-link">Keep social distancing</a></li>
-                      <li><a href="#" class="nav-link">Wear facemasl</a></li>
-                      <li><a href="#" class="nav-link">Wash your hands</a></li>
-                      <li class="has-children">
-                        <a href="#">More Links</a>
-                        <ul class="dropdown">
-                          <li><a href="#">Menu One</a></li>
-                          <li><a href="#">Menu Two</a></li>
-                          <li><a href="#">Menu Three</a></li>
-                        </ul>
-                      </li>
-                    </ul> -->
-                  </li>
-                  <li><a routerLink="/symptoms" routerLinkActive="active" class="nav-link">Symptoms</a></li>
-                  <li><a routerLink="/about" routerLinkActive="active" class="nav-link">About</a></li>
+                  <li><a routerLink="/prevention"  class="nav-link">Prevention</a></li>
+                  <li><a routerLink="/symptoms"  class="nav-link">Symptoms</a></li>
+                  <li><a [routerLink]="'/about'" class="nav-link">About</a></li>
   
   
                   <li><a href="blog.html" class="nav-link">Blog</a></li>

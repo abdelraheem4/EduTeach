@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Route, Router } from '@angular/router';
+import { ToastrService } from 'ngx-toastr';
 
 @Component({
   selector: 'app-sidebar',
@@ -8,9 +9,10 @@ import { Route, Router } from '@angular/router';
 })
 export class SidebarComponent implements OnInit {
 
-  constructor(private routr:Router) { }
+  constructor(private routr:Router,private toastr:ToastrService) { }
 
   ngOnInit(): void {
+    this.toastr.success('success');
   }
   logout()
   {

@@ -1,0 +1,82 @@
+
+<button (click)="opendialog()">Create New</button>
+<table  class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Course Name</th>
+        <th scope="col">Image</th>
+        <th scope="col">Categorey ID</th>
+        <!-- <th scope="col">Categorey</th>
+        <th scope="col">Student Courses</th> -->
+      </tr>
+    </thead>
+    <tbody *ngFor="let obj of home.User">
+      <tr>
+        <th scope="row"></th>
+        
+        <td>{{obj.coursename}}</td>
+        <!-- <td>{{obj.imageName}}</td> -->
+        <td><img src="../../../assets/images/{{obj.imageName}}" width="100" height="100"></td>
+        <td>{{obj.categoreyid}}</td>
+        
+        <td>
+         <button (click)="openUpdateDailog(obj)">Update</button>
+         <button (click)="openDeleteDailog(obj.courseid)">Delete</button>
+
+        </td>
+
+
+      </tr>
+      
+    </tbody>
+  </table>
+
+
+<!-- 
+
+  <ng-template #callUpdateDailog>
+
+<mat-dialog-content class="mat-typography">
+    <form class="example-form" [formGroup]="updateForm" >
+        <mat-form-field class="example-full-width" appearance="fill">
+          <mat-label>Course Name </mat-label>
+          <input type="text" matInput formControlName="coursename"
+          [(ngModel)]="p_data.coursename"
+          >
+          
+          <mat-error *ngIf="updateForm.controls['coursename'].hasError('required')">
+            Course Name  <strong>required</strong>
+          </mat-error>
+        </mat-form-field>
+        <br>
+        <mat-form-field class="example-full-width" appearance="fill">
+            <mat-label>Categorey Id </mat-label>
+            <input type="number" matInput formControlName="Categoreyid"
+            [(ngModel)]="p_data.categoreyid"
+            >
+            
+            <mat-error *ngIf="updateForm.controls['Categoreyid'].hasError('required')">
+                Categorey Id  <strong>required</strong>
+            </mat-error>
+          </mat-form-field>
+          <br>
+           <input type="file" #file formControlName="imageName" (change)="uploadfile(file.files)"
+           [(ngModel)]="p_data.imageName">
+    </form>
+</mat-dialog-content>
+<mat-dialog-actions align="end">
+  <button mat-button mat-dialog-close>Cancel</button>
+  <button mat-button [mat-dialog-close]="true" cdkFocusInitial (click)="saveData()">Save</button>
+</mat-dialog-actions>
+  </ng-template> -->
+
+
+
+  <ng-template #callDeleteDailog>
+
+<h2> Are you want to delete this item ?</h2>
+<button mat-dialog-close="yes">Yss</button>
+<button mat-dialog-close="no" >NO</button>
+
+  </ng-template>
